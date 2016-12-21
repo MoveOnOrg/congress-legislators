@@ -1,6 +1,11 @@
 import collections, requests, lxml
 from utils import load_data, save_data
 
+try:
+	from yaml import CLoader
+except ImportError:
+	print("Warning: libyaml not found, loading will be slow...")
+
 # # Open existing data.
 historical = load_data("legislators-historical.yaml")
 current = load_data("legislators-current.yaml")
@@ -22,6 +27,11 @@ for xml_member in root.findall('./members/member'):
 	mi = xml_member.find("member-info")
 	bioguide_id = mi.find("bioguideID").text
 
+	#print("bioguide_id is {} for {}".format(bioguide_id, xml_member.find("statedistrict").text))
+	if bioguide_id is None:
+		print("WARN: no member found for {}".format(xml_member.find("statedistrict").text))
+		continue
+	
 	if bioguide_id in bioguide:
 		# Incumbent won or current representative has become a senator
 		# or historical member is returning to office.
@@ -44,11 +54,12 @@ for xml_member in root.findall('./members/member'):
 			("name", collections.OrderedDict([
 				("first", mi.find('firstname').text),
 				("last", mi.find('lastname').text),
+				#("official_full", mi.find('official_full').text), #not available yet
 			])),
-			# ("bio", collections.OrderedDict([
-			# 	("gender", row['gender']),
-			# 	("birthday", row['birthday']),
-			# ])),
+			("bio", collections.OrderedDict([
+			 	("gender", "M" if mi.find('courtesy').text == "Mr." else "F"),
+			 	#("birthday", row['birthday']),
+			])),
 			("terms", []),
 		])
 
@@ -104,6 +115,5 @@ for p in elected:
 		current.append(p)
 
 # Save.
-print("saving...")
 save_data(current, "legislators-current.yaml")
 save_data(historical, "legislators-historical.yaml")

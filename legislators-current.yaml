@@ -39968,6 +39968,8 @@
   name:
     first: Tom
     last: O'Halleran
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -39983,6 +39985,8 @@
   name:
     first: Andy
     last: Biggs
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -39998,6 +40002,8 @@
   name:
     first: Ro
     last: Khanna
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40013,6 +40019,8 @@
   name:
     first: Jimmy
     last: Panetta
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40028,6 +40036,8 @@
   name:
     first: Salud
     last: Carbajal
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40043,6 +40053,8 @@
   name:
     first: Nanette
     last: Barragán
+  bio:
+    gender: F
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40058,6 +40070,8 @@
   name:
     first: J.
     last: Correa
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40073,6 +40087,8 @@
   name:
     first: Lisa
     last: Blunt Rochester
+  bio:
+    gender: F
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40088,6 +40104,8 @@
   name:
     first: Matt
     last: Gaetz
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40103,6 +40121,8 @@
   name:
     first: Neal
     last: Dunn
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40118,6 +40138,8 @@
   name:
     first: John
     last: Rutherford
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40133,6 +40155,8 @@
   name:
     first: Al
     last: Lawson
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40148,6 +40172,8 @@
   name:
     first: Stephanie
     last: Murphy
+  bio:
+    gender: F
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40163,6 +40189,8 @@
   name:
     first: Darren
     last: Soto
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40178,6 +40206,8 @@
   name:
     first: Val
     last: Demings
+  bio:
+    gender: F
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40193,6 +40223,8 @@
   name:
     first: Charlie
     last: Crist
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40208,6 +40240,8 @@
   name:
     first: Brian
     last: Mast
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40223,6 +40257,8 @@
   name:
     first: Francis
     last: Rooney
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40238,6 +40274,8 @@
   name:
     first: A.
     last: Ferguson
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40253,6 +40291,8 @@
   name:
     first: Raja
     last: Krishnamoorthi
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40268,6 +40308,8 @@
   name:
     first: Jim
     last: Banks
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40283,6 +40325,8 @@
   name:
     first: Trey
     last: Hollingsworth
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40298,6 +40342,8 @@
   name:
     first: Roger
     last: Marshall
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40308,41 +40354,13 @@
     caucus: Republican
     phone: (202) 225-2715
 - id:
-    bioguide: ~
-    govtrack: 412701
-  name:
-    first: ~
-    last: ~
-  terms:
-  - type: rep
-    start: '2017-01-03'
-    end: '2019-01-03'
-    state: LA
-    district: 3
-    party: Democrat
-    caucus: Democrat
-    phone: (202) 225-2031
-- id:
-    bioguide: ~
-    govtrack: 412702
-  name:
-    first: ~
-    last: ~
-  terms:
-  - type: rep
-    start: '2017-01-03'
-    end: '2019-01-03'
-    state: LA
-    district: 4
-    party: Democrat
-    caucus: Democrat
-    phone: (202) 225-2777
-- id:
     bioguide: B001304
-    govtrack: 412703
+    govtrack: 412701
   name:
     first: Anthony
     last: Brown
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40354,10 +40372,12 @@
     phone: (202) 225-8699
 - id:
     bioguide: R000606
-    govtrack: 412704
+    govtrack: 412702
   name:
     first: Jamie
     last: Raskin
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40369,10 +40389,12 @@
     phone: (202) 225-5341
 - id:
     bioguide: B001301
-    govtrack: 412705
+    govtrack: 412703
   name:
     first: Jack
     last: Bergman
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40384,10 +40406,12 @@
     phone: (202) 225-4735
 - id:
     bioguide: M001201
-    govtrack: 412706
+    govtrack: 412704
   name:
     first: Paul
     last: Mitchell
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40399,10 +40423,12 @@
     phone: (202) 225-2106
 - id:
     bioguide: L000587
-    govtrack: 412707
+    govtrack: 412705
   name:
     first: Jason
     last: Lewis
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40414,10 +40440,12 @@
     phone: (202) 225-2271
 - id:
     bioguide: B001305
-    govtrack: 412708
+    govtrack: 412706
   name:
     first: Ted
     last: Budd
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40429,10 +40457,12 @@
     phone: (202) 225-3032
 - id:
     bioguide: B001298
-    govtrack: 412709
+    govtrack: 412707
   name:
     first: Don
     last: Bacon
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40444,10 +40474,12 @@
     phone: (202) 225-4155
 - id:
     bioguide: G000583
-    govtrack: 412710
+    govtrack: 412708
   name:
     first: Josh
     last: Gottheimer
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40459,10 +40491,12 @@
     phone: (202) 225-4465
 - id:
     bioguide: R000608
-    govtrack: 412711
+    govtrack: 412709
   name:
     first: Jacky
     last: Rosen
+  bio:
+    gender: F
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40474,10 +40508,12 @@
     phone: (202) 225-3252
 - id:
     bioguide: K000390
-    govtrack: 412712
+    govtrack: 412710
   name:
     first: Ruben
     last: Kihuen
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40489,10 +40525,12 @@
     phone: (202) 225-9894
 - id:
     bioguide: S001201
-    govtrack: 412713
+    govtrack: 412711
   name:
     first: Thomas
     last: Suozzi
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40504,10 +40542,12 @@
     phone: (202) 225-3335
 - id:
     bioguide: E000297
-    govtrack: 412714
+    govtrack: 412712
   name:
     first: Adriano
     last: Espaillat
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40519,10 +40559,12 @@
     phone: (202) 225-4365
 - id:
     bioguide: F000464
-    govtrack: 412715
+    govtrack: 412713
   name:
     first: John
     last: Faso
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40534,10 +40576,12 @@
     phone: (202) 225-5614
 - id:
     bioguide: T000478
-    govtrack: 412716
+    govtrack: 412714
   name:
     first: Claudia
     last: Tenney
+  bio:
+    gender: F
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40549,10 +40593,12 @@
     phone: (202) 225-3665
 - id:
     bioguide: F000466
-    govtrack: 412717
+    govtrack: 412715
   name:
     first: Brian
     last: Fitzpatrick
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40564,10 +40610,12 @@
     phone: (202) 225-4276
 - id:
     bioguide: S001199
-    govtrack: 412718
+    govtrack: 412716
   name:
     first: Lloyd
     last: Smucker
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40579,10 +40627,12 @@
     phone: (202) 225-2411
 - id:
     bioguide: G000582
-    govtrack: 412719
+    govtrack: 412717
   name:
     first: Jenniffer
     last: González-Colón
+  bio:
+    gender: F
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40594,10 +40644,12 @@
     phone: (202) 225-2615
 - id:
     bioguide: K000392
-    govtrack: 412720
+    govtrack: 412718
   name:
     first: David
     last: Kustoff
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40609,10 +40661,12 @@
     phone: (202) 225-4714
 - id:
     bioguide: G000581
-    govtrack: 412721
+    govtrack: 412719
   name:
     first: Vicente
     last: Gonzalez
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40624,10 +40678,12 @@
     phone: (202) 225-2531
 - id:
     bioguide: A000375
-    govtrack: 412722
+    govtrack: 412720
   name:
     first: Jodey
     last: Arrington
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40639,10 +40695,12 @@
     phone: (202) 225-4005
 - id:
     bioguide: T000477
-    govtrack: 412723
+    govtrack: 412721
   name:
     first: Scott
     last: Taylor
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40654,10 +40712,12 @@
     phone: (202) 225-4215
 - id:
     bioguide: M001200
-    govtrack: 412724
+    govtrack: 412722
   name:
     first: A.
     last: McEachin
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40669,10 +40729,12 @@
     phone: (202) 225-6365
 - id:
     bioguide: G000580
-    govtrack: 412725
+    govtrack: 412723
   name:
     first: Thomas
     last: Garrett
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40684,10 +40746,12 @@
     phone: (202) 225-4711
 - id:
     bioguide: J000298
-    govtrack: 412726
+    govtrack: 412724
   name:
     first: Pramila
     last: Jayapal
+  bio:
+    gender: F
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40699,10 +40763,12 @@
     phone: (202) 225-3106
 - id:
     bioguide: G000579
-    govtrack: 412727
+    govtrack: 412725
   name:
     first: Mike
     last: Gallagher
+  bio:
+    gender: M
   terms:
   - type: rep
     start: '2017-01-03'
@@ -40714,10 +40780,12 @@
     phone: (202) 225-5665
 - id:
     bioguide: C001109
-    govtrack: 412728
+    govtrack: 412726
   name:
     first: Liz
     last: Cheney
+  bio:
+    gender: F
   terms:
   - type: rep
     start: '2017-01-03'
