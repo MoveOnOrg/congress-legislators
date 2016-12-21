@@ -54,6 +54,8 @@ for xml_member in root.findall('./members/member'):
 
 	party_char = mi.find('party').text
 	party = 'Republican' if party_char == 'R' else 'Democrat' # valid?
+	caucus_char = mi.find('caucus').text
+	caucus = 'Republican' if caucus_char == 'R' else 'Democrat' # valid?
 
 	district = int(xml_member.find("statedistrict").text[2:])
 	# Add a new term.
@@ -64,24 +66,15 @@ for xml_member in root.findall('./members/member'):
 		("state", mi.find('state').get('postal-code')),
 		("district", district),
 		("party", party),
+		("caucus", caucus),
 		("phone", mi.find("phone").text),
 	]))
 
-	# if row['new'] == "Y":
-	# 	# Not an incumbent. Therefore this person becomes
-	# 	# the junior senator and the other (non-class-3)
-	# 	# senator becomes the senior senator.
-	# 	p['terms'][-1]['state_rank'] = "junior"
-	# 	p['terms'][-1]['party'] = row['party'] or p['terms'][-2]['party'] # as listed in the CSV, or from their previous term if previously served
-	# 	for p1 in current:
-	# 		if p1['terms'][-1]['type'] == 'sen' and p1['terms'][-1]['state'] == row['state'] and p1['terms'][-1]['class'] != 3:
-	# 			p1['terms'][-1]['state_rank'] = "senior"
-	# 			break
-	# else:
-	# 	# This is an incumbent. Copy some fields forward.
-	# 	for k in ('state_rank', 'party', 'caucus', 'url', 'rss_url'):
-	# 		if k in p['terms'][-2]:
-	# 			p['terms'][-1][k] = p['terms'][-2][k]
+	if len(p['terms']) > 1:
+		# This is an incumbent. Copy some fields forward.
+		for k in ('url', 'rss_url'):
+			if k in p['terms'][-2]:
+				p['terms'][-1][k] = p['terms'][-2][k]
 
 	# Add to array.
 	elected.append(p)
@@ -90,7 +83,7 @@ for xml_member in root.findall('./members/member'):
 for p in current:
 	if p['terms'][-1]['type'] == 'rep' \
 		and p not in elected:
-		#print("moving {} {} {} to historical".format(p['id']['bioguide'], p['name']['first'], p['name']['last']))
+		print("moving {} {} {} to historical".format(p['id']['bioguide'], p['name']['first'], p['name']['last']))
 		current.remove(p)
 		historical.append(p)
 
@@ -99,9 +92,7 @@ for p in current:
 			if not r.get('end'):
 				r['end'] = "2017-01-03"
 
-# Move returning members to the current file -- actually there are no
-# cases of this. All of the existing non-incumbents are current reps
-# who became senators.
+# Move returning members to the current file 
 for p in elected:
 	if p in historical:
 		historical.remove(p)
@@ -113,5 +104,6 @@ for p in elected:
 		current.append(p)
 
 # Save.
-save_data(historical, "legislators-historical.yaml")
+print("saving...")
 save_data(current, "legislators-current.yaml")
+save_data(historical, "legislators-historical.yaml")
