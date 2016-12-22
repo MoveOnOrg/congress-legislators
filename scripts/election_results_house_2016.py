@@ -1,4 +1,5 @@
 import collections, requests, lxml
+import copy #used to preseve current for iterating
 from utils import load_data, save_data
 
 try:
@@ -86,15 +87,14 @@ for xml_member in root.findall('./members/member'):
 		for k in ('url', 'rss_url'):
 			if k in p['terms'][-2]:
 				p['terms'][-1][k] = p['terms'][-2][k]
-
+			
 	# Add to array.
 	elected.append(p)
 
 # Move losers to the historical file.
-for p in current:
-	if p['terms'][-1]['type'] == 'rep' \
-		and p not in elected:
-		print("moving {} {} {} to historical".format(p['id']['bioguide'], p['name']['first'], p['name']['last']))
+for p in copy.deepcopy(current):
+	if p['terms'][-1]['type'] == 'rep' and p not in elected:
+		#print("moving {} {} {} to historical".format(p['id']['bioguide'], p['name']['first'], p['name']['last']))
 		current.remove(p)
 		historical.append(p)
 
